@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolia</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: 'Poppins', sans-serif;
+        }
+        :root{
+            --bg-color: #e7eafb;
+            --primary: #01a29c;
+            --hover: #008170;
+
+            --h1-font: 2.2rem;
+            --h2-font: 1.1rem;
+            --p-font: 0.9rem;
+
+            --m-1: 0.4rem;
+            --m-4: 1.1rem;
+        }
+        body{
+            background: #1c2834;
+            color: white;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--bg-color);
+            padding: 10px 100px;
+
+        }
+        .logo{
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            font-weight: 600px;
+            color: var(--primary);
+        }
+        .nav{
+            display: flex;
+        }
+        .nav a{
+            font-size: 1rem;
+            padding: 70px 80px;
+            color: #d61630;
+            font-weight: 900;
+        }
+        .nav a:hover{
+            background: var(--primary);
+            color: #ffff
+        }
+        .hero{
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            color: #222435;
+            background: var(--bg-color);
+            padding-left: 100px;
+            padding-right: 100px;
+
+        }
+        .hero.text{
+            font-size: var(--h1-font);
+            letter-spacing: 1px;
+        }
+        .hero-text span{
+            color:var(--primary)
+        }
+        .hero-text h2{
+            font-size: var(--h2-font);
+            margin: var(--m-1);
+            letter-spacing: 1px;
+
+        }
+        .hero-text p{
+            font-size: var(--p-font);
+            line-height: 25px;
+            max-width: 65%;
+            margin-bottom: 45px;
+        }
+        .cta-btn{
+            padding: 10px 30px;
+            background: var(--primary);
+            color: #fff;
+        }
+        .cta.btn:hover{
+            background: var(--hover);
+            transition: 0.5s;
+        }
+        @media screen and (max-width:1000px) {
+            .card{
+                width: 40%;
+            }
+        }
+        @media screen and (max-width:600px) { 
+            .card{
+                width: 80%; 
+            }
+            
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Cosmas</a>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>I am <span> Cosmas Kiprotich, </span>a Junior Full-Web Developer</h1>
+            <h2> My Career Objectives</h2>
+            <p>With four years’ experience in Information Technology, I am seeking a position in life to utilize my skills and abilities and achieve professional growth while being resourceful, innovative and flexible by adding valuable assets to your esteemed organization as an active employee.  </p>
+            <a href="#" class="cta-btn">Call Me</a>
+        </div>
+        <div class="hero-image">
+            <img src="webdeveloper.jpg" alt="This is a picture of me coding">
+            
+        </div>
+    </section>
+</body>
+</html>
